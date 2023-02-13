@@ -1,4 +1,5 @@
 def extended_gcd(a, b):
+    """Return gcd(a,b), x, y: gcd(a,b)=ax+by."""
     assert a >= b and b >= 0 and a + b > 0
 
     if b == 0:
