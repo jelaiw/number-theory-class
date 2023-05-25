@@ -19,8 +19,7 @@
         "vscode": {
             "extensions": [
 				"ms-python.python",
-				"ms-toolsai.jupyter",
-				"vscodevim.vim"
+				"ms-toolsai.jupyter"
 			]
         }
     }
