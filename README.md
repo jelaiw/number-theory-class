@@ -6,3 +6,4 @@ Programming exercises and code examples from UC San Diego *Number Theory and Cry
 1. Modular arithmetic. Khan Academy, https://www.khanacademy.org/computing/computer-science/cryptography/#modarithmetic.
 1. Primality test. Khan Academy, https://www.khanacademy.org/computing/computer-science/cryptography/#comp-number-theory. 
 1. SymPy: A Python library for symbolic mathematics. https://sympy.org/.
+1. Many Time Pad Attack - Crib Drag. Dazell T. BlogSpot, Nov 2012, http://travisdazell.blogspot.com/2012/11/many-time-pad-attack-crib-drag.html.
