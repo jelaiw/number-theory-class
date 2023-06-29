@@ -7,5 +7,5 @@ Programming exercises and code examples from UC San Diego *Number Theory and Cry
 1. Primality test. Khan Academy, https://www.khanacademy.org/computing/computer-science/cryptography/#comp-number-theory. 
 1. SymPy: A Python library for symbolic mathematics. https://sympy.org/.
 1. "Serious Crytography: A Practical Introduction to Modern Encryption". Aumasson, Jean-Philippe. No Starch Press, 2018.
-1. Euler's totient function. Khan Academy, https://www.khanacademy.org/computing/computer-science/cryptography/modern-crypt/v/euler-s-totient-function-phi-function.
+1. Euler's totient function. Cruise, B. Khan Academy, https://www.khanacademy.org/computing/computer-science/cryptography/modern-crypt/v/euler-s-totient-function-phi-function.
 1. Many Time Pad Attack - Crib Drag. Dazell T. BlogSpot, Nov 2012, http://travisdazell.blogspot.com/2012/11/many-time-pad-attack-crib-drag.html.
