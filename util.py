@@ -17,3 +17,9 @@ def ExtendedEuclid(a, b):
     (x, y) = ExtendedEuclid(b, a % b)
     k = a // b
     return (y, x - k * y)
+
+def InvertModulo(a, n):
+    (b, x) = ExtendedEuclid(a, n)
+    if b < 0:
+        b = (b % n + n) % n
+    return b
