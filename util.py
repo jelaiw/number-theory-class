@@ -23,3 +23,16 @@ def InvertModulo(a, n):
     if b < 0:
         b = (b % n + n) % n
     return b
+
+def PowMod(a, n, mod):
+    if n == 0:
+        return 1 % mod
+    elif n == 1:
+        return a % mod
+    else:
+        b = PowMod(a, n // 2, mod)
+        b = b * b % mod
+        if n % 2 == 0:
+          return b
+        else:
+          return b * a % mod
