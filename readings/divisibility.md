@@ -9,3 +9,15 @@ The intuition behind this definition is simple (for positive $a$ and $b$). Suppo
 __Problem.__ Is $15$ divisible by $3$? Is it divisible by $4$? Is it divisible by $-5$?
 
 __Problem.__ Is $-24$ divisible by $-6$? Is it divisible by $-5$?
+
+Formal definition of divisibility might look strange, indeed, everything seems to be obvious for specific numbers. However, formal definitions allow us to formally prove general properties. 
+
+__Lemma.__ If $c$ divides $a$ and $b$, then $c$ divides $a \pm b$.
+
+__Proof.__ Since $c$ divides $a$, there is $k_1$ such that $a = ck_1$. Similarly, there is $k_2$ such that $b = ck_2$. Then $a \pm b = ck_1 \pm ck_2 = c(k_1 \pm k_2)$.
+
+By definition, this means that $a \pm b$ is divisible by $c$.
+
+__Lemma.__ If $b \mid a$, then for any integer $c$, we have $b \mid (a \cdot c)$.
+
+__Proof.__ Since $b \mid a$, we have that $a = bk$ for some $k$. We can multiply both sides of the equality by $c$: $ca = b(ck)$. By definition, this means that $ca$ is divisible by $b$.
