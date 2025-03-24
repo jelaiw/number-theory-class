@@ -25,3 +25,5 @@ __Proof.__ Since $b \mid a$, we have that $a = bk$ for some $k$. We can multiply
 __Problem.__ Which of the following numbers divides $0$? Use our formal notion of divisibility to answer this question.
 
 __Problem.__ Which of the following numbers are divisible by $0$? Use our formal notion of divisibility to answer this question.
+
+__Problem.__ How many 3-digit non-negative numbers are there that have remainder 7 when divided by 101? Here we assume that 1-digit and 2-digit numbers are also 3-digit, they just start with 0.
