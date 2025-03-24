@@ -21,3 +21,7 @@ By definition, this means that $a \pm b$ is divisible by $c$.
 __Lemma.__ If $b \mid a$, then for any integer $c$, we have $b \mid (a \cdot c)$.
 
 __Proof.__ Since $b \mid a$, we have that $a = bk$ for some $k$. We can multiply both sides of the equality by $c$: $ca = b(ck)$. By definition, this means that $ca$ is divisible by $b$.
+
+__Problem.__ Which of the following numbers divides $0$? Use our formal notion of divisibility to answer this question.
+
+__Problem.__ Which of the following numbers are divisible by $0$? Use our formal notion of divisibility to answer this question.
