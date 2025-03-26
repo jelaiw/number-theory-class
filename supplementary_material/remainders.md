@@ -16,3 +16,16 @@ Let us consider several examples.
 * For $a = 15$ and $b = 4$, we have $15 = 3 \cdot 4 + 3$. Here $q = r = 3$.
 * For $a = -13$ and $b = 3$, we have $-13 = (-5) \cdot 3 + 2$ and $q = -5$, $r = 2$.
 * For $a = 12$ and $b = 4$, we have $12 = 3 \cdot 4 + 0$ and $q = 3$, $r = 0$.
+
+In Python, one can compute the quotient and the remainder either directly or using a built-in method `divmod`.
+
+```python
+a, b = -13, 3
+print(a // b, a % b)
+print(divmod(a, b))
+```
+
+```python
+-5 2
+(-5, 2)
+```
