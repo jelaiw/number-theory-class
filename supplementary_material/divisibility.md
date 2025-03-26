@@ -1,3 +1,4 @@
+## Divisibility
 When is an integer $a$ is divisible by an integer $b$? A naive answer will be that we should consider the rational number $\frac{a}{b}$ and if it is an integer, then $a$ is divisible by $b$. However, this definition refers to a more complex concept of rational numbers. Let us unwrap this explanation and try to understand what we are actually trying to say. 
 
 What does it mean that $\frac{a}{b}$ is integer? It means that the denominator cancels out. In other words, we can represent $a$ as a product of $b$ and some integer $k$: $a = bk$. Then we have $\frac{a}{b} = \frac{bk}{b} = k$. Now, this reformulation only uses a simple notion of multiplication and does not refer to rational numbers. As a result, we arrive at the following definition.
