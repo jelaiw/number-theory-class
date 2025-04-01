@@ -39,3 +39,11 @@ where $q$ is any integer. For example, for $q = 0$ we have $a = 1$. For positive
 ![number line for a = 7q + 1](remainders-fig1.png)
 
 We can observe that the distance between any two consecutive numbers is exactly 7 and thus, every 7-th number has the same remainder when divided by 7. Clearly, this analysis generalize to division by any number $b$ and any remainder $r$: each $b$-th number has the remainder $r$ when divided by $b$. 
+
+In the definition above we have introduced division with remainder. The result of the division is given by the quotient and the remainder. But why do they actually exist? In other words, is division with remainder always possible?
+
+Suppose we want to divide $a$ by $b$, where $b$ is positive. In other words, we want to find $q$ and $r$, such that $0 \leq r < b$ and $a = qb + r$. How would we do that? Let's start with a positive $a$. In this case, we can do it using the intuition we discussed. Let us consider $a$ objects and let us start forming groups of them of size $b$ one by one. Eventually, there will be not enough objects left for the next group. Then, the number of complete groups is $q$ and the number of remaining objects is $r$. It is easy to see that $0 \leq r < b$ and $a = qb + r$.
+
+More formally, we repeatedly subtract $b$ from $a$ until the result is less than $b$. The result is the remainder $r$ and the number of subtractions is the quotient $q$.
+
+Now, what if $a$ is negative? Then we can easily adapt the procedure above: we start adding $b$ to $a$ until we get a non-negative number.
