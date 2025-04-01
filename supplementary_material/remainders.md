@@ -29,3 +29,13 @@ print(divmod(a, b))
 -5 2
 (-5, 2)
 ```
+
+To further develop our intuition, let us address the following question. How do numbers that give remainder $1$ when divided by $7$ look like? These numbers have the form 
+
+$a = 7q + 1$
+
+where $q$ is any integer. For example, for $q = 0$ we have $a = 1$. For positive $q = 1, 2, 3, ...$, we get the sequence $a = 8, 15, 22, ...$. For negative $q = -1, -2, -3, ...$, we get the sequence $a = -6, -13, -20, ...$. Overall, we get the following picture.
+
+![number line for a = 7q + 1](remainders-fig1.png)
+
+We can observe that the distance between any two consecutive numbers is exactly 7 and thus, every 7-th number has the same remainder when divided by 7. Clearly, this analysis generalize to division by any number $b$ and any remainder $r$: each $b$-th number has the remainder $r$ when divided by $b$. 
