@@ -47,3 +47,23 @@ Suppose we want to divide $a$ by $b$, where $b$ is positive. In other words, we 
 More formally, we repeatedly subtract $b$ from $a$ until the result is less than $b$. The result is the remainder $r$ and the number of subtractions is the quotient $q$.
 
 Now, what if $a$ is negative? Then we can easily adapt the procedure above: we start adding $b$ to $a$ until we get a non-negative number.
+
+We have shown that division with remainder is always possible, but is it unique?
+
+__Problem.__ For given $a$ and $b > 0$, is the representation of the form $a = qb + r$ for $0 \leq r < b$ unique?
+
+It turns out that this representation is indeed unique. To prove this, let us assume by contradiction that there are two representations
+
+$a = q_1b + r_1$, $a = q_2b + r_2$
+
+This gives us that $q_1b + r_1 = q_2b + r_2$. After rearranging the terms, we get
+
+$(q_1 - q_2)b = r_2 - r_1$
+
+Let us look at the right-hand side $r_2 - r_1$ of this equality. Here, $r_2$ is less then $b$ and $r_1$ is non-negative. If we subtract something non-negative from a number that is already less than $b$, the result is again less than $b$. On the other hand, $-r_1$ is greater than $-b$ and $r_2$ is non-negative. If we add something non-negative to the number that is greater than $-b$ the result is also greater than $-b$. Thus, we can conclude that
+
+$-b < r_2 - r_1 < b$
+
+Now, let us have a look at the left-hand side. If $q_1 - q_2 \ne 0$, then $\lvert q_1 - q_2 \rvert \geq 1$. If we multiply this by $b$, we get a number that is at least equal to $b$ in the absolute value. Thus, the left-hand side is of the absolute value at least $b$ and the right-hand side is of the absolute value less then $b$. Thus, we must have that $q_1 - q_2 = 0$ or, in other words, $q_1 = q_2$. From this we can also observe that $r_2 - r_1 = (q_1 - q_2)b = 0 \cdot b = 0$ and $r_1 = r_2$. We have considered two expressions for the division of $a$ by $b$ with remainder and have shown that they actually must be the same.
+
+We have introduced the generalized version of division, division with remainder. It turns out, that this notion has important connection to the notion of divisibility we discussed before.
