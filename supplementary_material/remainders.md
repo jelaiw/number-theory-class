@@ -67,3 +67,27 @@ $-b < r_2 - r_1 < b$
 Now, let us have a look at the left-hand side. If $q_1 - q_2 \ne 0$, then $\lvert q_1 - q_2 \rvert \geq 1$. If we multiply this by $b$, we get a number that is at least equal to $b$ in the absolute value. Thus, the left-hand side is of the absolute value at least $b$ and the right-hand side is of the absolute value less then $b$. Thus, we must have that $q_1 - q_2 = 0$ or, in other words, $q_1 = q_2$. From this we can also observe that $r_2 - r_1 = (q_1 - q_2)b = 0 \cdot b = 0$ and $r_1 = r_2$. We have considered two expressions for the division of $a$ by $b$ with remainder and have shown that they actually must be the same.
 
 We have introduced the generalized version of division, division with remainder. It turns out, that this notion has important connection to the notion of divisibility we discussed before.
+
+__Lemma.__ Integers $a_1$ and $a_2$ have the same remainder when divided by $b$ if and only if $a_1 - a_2$ is divisible by $b$.
+
+__Proof.__ Suppose $a_1$ and $a_2$ have the same remainder $r$ when divided by $b$:
+
+$a_1 = q_1b + r$, $a_2 = q_2b + r$
+
+Then, 
+
+$a_1 - a_2 = q_1b + r - (q_2b +r) = (q_1 - q_2)b$
+
+Thus, $a_1 - a_2$ is divisible by $b$ and $(q_1 - q_2)$ plays the role of $k$ from the definition of divisibility.
+
+In the other direction, suppose $b \mid (a_1 - a_2)$. Then $a_1 - a_2 = kb$. Let us divide $a_2$ by $b$ with the remainder:
+
+$a_2 = q_2b + r$
+
+for some $q_2$ and $0 \leq r < b$.
+
+Then 
+
+$a_1 = a_2 + kb = q_2b + r + kb = (q_2 + k)b + r$
+
+Thus, $a_1$ has the same remainder as $a_2$ when divided by $b$.
