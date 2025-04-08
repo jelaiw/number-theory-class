@@ -91,3 +91,8 @@ Then
 $a_1 = a_2 + kb = q_2b + r + kb = (q_2 + k)b + r$
 
 Thus, $a_1$ has the same remainder as $a_2$ when divided by $b$.
+
+## Problems
+__Problem.__ Suppose $a$ is not divisible by $2$ ($a$ is odd). What possible remainders can $a$ have when divided by $4$?
+
+There are four possible remainders when we divide by $4$: $0$, $1$, $2$, $3$. Clearly, the remainder $0$ is impossible: having remainder 0 means that $4 \mid a$, but then $a$ is even. Suppose now that the remainder is $2$, that is $a = 4q + 2$ for some $q$. But then $a$ is even again, thus the remainder $2$ is also not possible. There are two remaining remainders, $1$ and $3$. Both of these are actually possible, for example, with $a = 1$ and $a = 3$.
