@@ -96,3 +96,9 @@ Thus, $a_1$ has the same remainder as $a_2$ when divided by $b$.
 __Problem.__ Suppose $a$ is not divisible by $2$ ($a$ is odd). What possible remainders can $a$ have when divided by $4$?
 
 There are four possible remainders when we divide by $4$: $0$, $1$, $2$, $3$. Clearly, the remainder $0$ is impossible: having remainder 0 means that $4 \mid a$, but then $a$ is even. Suppose now that the remainder is $2$, that is $a = 4q + 2$ for some $q$. But then $a$ is even again, thus the remainder $2$ is also not possible. There are two remaining remainders, $1$ and $3$. Both of these are actually possible, for example, with $a = 1$ and $a = 3$.
+
+__Problem__. Is it true that for any four integers $a$, $b$, $c$, $d$ there are two of them whose difference is divisible by $3$? 
+
+Consider the following four numbers: $1$, $100$, $27$, $5$. After some examination we notice that $100 - 1 = 99$ is divisible by $3$. If you try some other examples, you will also see that there is always a pair with a difference divisible by $3$. In fact, the statement is always true!
+
+The key idea for the solution is that there are just three possible remainders when dividing by $3$: 0, 1, and 2. Since we have four numbers, there must be two of them that have the same remainder (this is an application of the pigeonhole principle we discussed in the first course of this specialization). Thus, the difference of these two numbers is divisible by $3$ (we have established this property above). 
