@@ -102,3 +102,11 @@ __Problem__. Is it true that for any four integers $a$, $b$, $c$, $d$ there are 
 Consider the following four numbers: $1$, $100$, $27$, $5$. After some examination we notice that $100 - 1 = 99$ is divisible by $3$. If you try some other examples, you will also see that there is always a pair with a difference divisible by $3$. In fact, the statement is always true!
 
 The key idea for the solution is that there are just three possible remainders when dividing by $3$: 0, 1, and 2. Since we have four numbers, there must be two of them that have the same remainder (this is an application of the pigeonhole principle we discussed in the first course of this specialization). Thus, the difference of these two numbers is divisible by $3$ (we have established this property above). 
+
+__Problem.__ What is the number of non-negative integers that have at most three digits and give remainder 7 when divided by 101?
+
+All numbers that have remainder $7$ when divided by $101$ have the form 
+
+$a = 101q + 7$
+
+for integer $q$. Now we need to understand for which $q$ the resulting number $a$ has at most three digits. If $q$ is negative, then $a$ is also negative. The first $q$ for which $a$ gets into the desired range is $q = 0: a = 101 \cdot 0 + 7 = 7$. When $q$ grows, $a$ also grows. It is easy to check that the last $q$ for which $a$ is still a 3-digit number is $q = 9: a = 101 \cdot 9 + 7 = 916$. Thus, there are ten such numbers, for $q$ from 0 to 9.
