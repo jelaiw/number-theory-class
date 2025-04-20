@@ -31,3 +31,21 @@ The proof of this lemma can be written in one line:
 $a + c \equiv a + d \equiv b + d \mod{m}$
 
 Here we use the previous lemma twice. On the first step, we added the same number $a$ to both sides of the congruence $c \equiv d \mod{m}$ and on the second step, we added the same number $d$ to both sides of the congruence $a \equiv b \mod{m}$.
+
+From another perspective, these two properties mean that we can substitute numbers in the sums by their congruents without changing the remainder of the sum. Using this basic property we can already show the idea of how we can simplify modular calculations.
+
+__Problem.__ What is the remainder of
+
+$14 + 41 + 20 + 13 + 29$
+
+when divided by $4$?
+
+Instead of computing the whole sum above and dividing by $4$ with a remainder, we can apply the results we obtained. Each of the numbers in the sum is congruent to its remainder:
+
+$14 \equiv 2 \mod{4}$, $41 \equiv 1 \mod{4}$, $20 \equiv 0 \mod{4}$, $13 \equiv 1 \mod{4}$, $29 \equiv 1 \mod{4}$.
+
+Using our properties we can substitute each number by its remainder in the congruence and compute the remainder of the sum much easier:
+
+$14 + 41 + 20 + 13 + 29 \equiv 2 + 1 + 0 + 1 + 1 \equiv 5 \equiv 1 \mod{4}$.
+
+Thus the remainder of the sum is 1 when divided by 4.
