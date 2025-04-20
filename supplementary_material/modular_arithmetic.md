@@ -21,3 +21,13 @@ __Lemma.__ If $a \equiv b \mod{m}$ then $a + c \equiv b + c \mod{m}$ for any $c$
 In other words, we can add any integer to both sides of a relation. 
 
 The proof of this lemma is simple: $a \equiv b \mod{m}$ means that $m \mid a - b$. Since $a - b = (a + c) - (b + c)$ we have $m \mid (a + c) - (b + c)$ and $a + c \equiv b + c \mod{m}$. 
+
+__Lemma.__ If $a \equiv b \mod{m}$ and $c \equiv d \mod{m}$ then $a + c \equiv b + d \mod{m}$.
+
+In other words, not only can we add the same number to both sides of the congruence, but we can add different, but congruent numbers. That is, we can add two congruence relations to each other.
+
+The proof of this lemma can be written in one line:
+
+$a + c \equiv a + d \equiv b + d \mod{m}$
+
+Here we use the previous lemma twice. On the first step, we added the same number $a$ to both sides of the congruence $c \equiv d \mod{m}$ and on the second step, we added the same number $d$ to both sides of the congruence $a \equiv b \mod{m}$.
