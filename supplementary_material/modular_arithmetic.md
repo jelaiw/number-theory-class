@@ -49,3 +49,11 @@ Using our properties we can substitute each number by its remainder in the congr
 $14 + 41 + 20 + 13 + 29 \equiv 2 + 1 + 0 + 1 + 1 \equiv 5 \equiv 1 \mod{4}$.
 
 Thus the remainder of the sum is 1 when divided by 4.
+
+It turns out that similar properties are true for multiplication as well.
+
+__Lemma.__ If $a \equiv b \mod{m}$ then $a \times c \equiv b \times c \mod{m}$ for any $c$.
+
+In other words, we can multiply a congruence relation by an integer.
+
+The proof is similar: congruence of $a$ and $b$ modulo $m$ means that $m \mid (a - b)$ and then $m \mid (a - b)c$ which means that $ac$ and $bc$ are congruent as well. 
