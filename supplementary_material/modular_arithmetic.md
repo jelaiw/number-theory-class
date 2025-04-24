@@ -57,3 +57,15 @@ __Lemma.__ If $a \equiv b \mod{m}$ then $a \times c \equiv b \times c \mod{m}$ f
 In other words, we can multiply a congruence relation by an integer.
 
 The proof is similar: congruence of $a$ and $b$ modulo $m$ means that $m \mid (a - b)$ and then $m \mid (a - b)c$ which means that $ac$ and $bc$ are congruent as well. 
+
+__Lemma.__ If $a \equiv b \mod{m}$ and $c \equiv d \mod{m}$, then $a \times c \equiv b \times d \mod{m}$.
+
+In other words, we can multiply two congruence relations by each other.
+
+The proof is almost the same as for addition:
+
+$ac \equiv ad \equiv bd \mod{m}$
+
+Here, on the first step, we multiplied both sides of the congruence $c \equiv d \mod{m}$ by the same number $a$ and on the second step, we multiplied both sides of the congruence $a \equiv b \mod{m}$ by the same number $d$.
+
+Another perspective on these properties is that we can substitute numbers in the products by their congruents without changing the remainder of the product.
