@@ -89,3 +89,25 @@ __NOTE:__ Regarding $2 \equiv -1 \mod{3}$, the long division seems to work, but 
 $-1 = 3q + r = 3(-1) + 2$
 
 where $0 \leq r < b$.
+
+In programming, this is reflected as follows. Say, you want to compute the remainder modulo $m$ of the product of a sequence of integers. The naive way of doing this is the following.
+
+```python
+def product_modulo(lst, modulo):
+    product = 1
+    for element in lst:
+        product = product * element
+
+    return product % modulo
+```
+
+The right way to compute it is to take every intermediate result modulo $m$: the code below is faster and safer as it avoids working with potentially huge numbers.
+
+```python
+def product_modulo(lst, modulo):
+    product = 1
+    for element in lst:
+        product = (product * element) % modulo
+
+    return product
+```
