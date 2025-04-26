@@ -69,3 +69,17 @@ $ac \equiv ad \equiv bd \mod{m}$
 Here, on the first step, we multiplied both sides of the congruence $c \equiv d \mod{m}$ by the same number $a$ and on the second step, we multiplied both sides of the congruence $a \equiv b \mod{m}$ by the same number $d$.
 
 Another perspective on these properties is that we can substitute numbers in the products by their congruents without changing the remainder of the product.
+
+Now we are ready to solve the problem that asked us to calculate the remainder of
+
+$17 \times (12 \times 19 + 5) - 23$
+
+when divided by $3$.
+
+To compute the remainder, we can substitute each number by their remainder when divided by 3. As we have seen, this change does not affect the remainders of the results of arithmetic operations. This gives us
+
+$17 \times (12 \times 19 + 5) - 23 \equiv 2 \times (0 \times 1 + 2) - 2 \equiv 2 \mod{3}$
+
+This simplifies computation a lot. When it is needed to simplify the computation even further, the following idea might be useful: we do not have to substitute numbers in the arithmetic expression by their remainders, we can use any congruent numbers. For example, in case of computations modulo 3, instead of remainders $0$, $1$, $2$ we can use congruents $0$, $1$, $-1$ respectively (note that $2 \equiv -1 \mod{3}$). This introduces negative numbers, but makes the absolute values of the numbers even smaller, simplifying computations further. With this approach, the solution of the problem looks as follows:
+
+$17 \times (12 \times 19 + 5) - 23 \equiv -1 \times (0 \times 1 -1) + 1 \equiv 2 \mod{3}$
