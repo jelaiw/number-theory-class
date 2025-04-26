@@ -80,6 +80,6 @@ To compute the remainder, we can substitute each number by their remainder when 
 
 $17 \times (12 \times 19 + 5) - 23 \equiv 2 \times (0 \times 1 + 2) - 2 \equiv 2 \mod{3}$
 
-This simplifies computation a lot. When it is needed to simplify the computation even further, the following idea might be useful: we do not have to substitute numbers in the arithmetic expression by their remainders, we can use any congruent numbers. For example, in case of computations modulo 3, instead of remainders $0$, $1$, $2$ we can use congruents $0$, $1$, $-1$ respectively (note that $2 \equiv -1 \mod{3}$). This introduces negative numbers, but makes the absolute values of the numbers even smaller, simplifying computations further. With this approach, the solution of the problem looks as follows:
+This simplifies computation a lot. When it is needed to simplify the computation even further, the following idea might be useful: we do not have to substitute numbers in the arithmetic expression by their remainders, _we can use any congruent numbers_. For example, in case of computations modulo 3, instead of remainders $0$, $1$, $2$ we can use congruents $0$, $1$, $-1$ respectively (note that $2 \equiv -1 \mod{3}$). This introduces negative numbers, but makes the absolute values of the numbers even smaller, simplifying computations further. With this approach, the solution of the problem looks as follows:
 
 $17 \times (12 \times 19 + 5) - 23 \equiv -1 \times (0 \times 1 -1) + 1 \equiv 2 \mod{3}$
