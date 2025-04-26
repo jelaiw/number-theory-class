@@ -83,3 +83,9 @@ $17 \times (12 \times 19 + 5) - 23 \equiv 2 \times (0 \times 1 + 2) - 2 \equiv 2
 This simplifies computation a lot. When it is needed to simplify the computation even further, the following idea might be useful: we do not have to substitute numbers in the arithmetic expression by their remainders, _we can use any congruent numbers_. For example, in case of computations modulo 3, instead of remainders $0$, $1$, $2$ we can use congruents $0$, $1$, $-1$ respectively (note that $2 \equiv -1 \mod{3}$). This introduces negative numbers, but makes the absolute values of the numbers even smaller, simplifying computations further. With this approach, the solution of the problem looks as follows:
 
 $17 \times (12 \times 19 + 5) - 23 \equiv -1 \times (0 \times 1 -1) + 1 \equiv 2 \mod{3}$
+
+__NOTE:__ Regarding $2 \equiv -1 \mod{3}$, the long division seems to work, but feels fiddly (perhaps see https://mathvault.ca/long-division/ if serious), so it may be simplest to consider $\frac{-1}{3}$ as $a = qb + r$ from earlier definition where $a = 1$ and $b = 3$.
+
+$-1 = 3q + r = 3(-1) + 2$
+
+where $0 \leq r < b$.
