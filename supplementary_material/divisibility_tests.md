@@ -32,3 +32,6 @@ Indeed, let us denote the last digit of $a$ by $b$. Then the last digit of $a−
 We can prove a similar statement for divisibility by $2$.
 
 __Lemma.__ An integer $a$ is divisible by $2$ if and only if its last digit is either 0, 2, 4, 6, or 8. 
+
+__Problem.__ Which of the following numbers are divisible by 10?
+25, 70, -20, 0
