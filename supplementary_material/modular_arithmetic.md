@@ -111,3 +111,7 @@ def product_modulo(lst, modulo):
 
     return product
 ```
+
+__Problem.__ What is the remainder of $(77 + 95 \times 79) \times 82$ when divided by $3$?
+
+__Problem.__ What is the remainder of $(34 - 14 \times 25) \times (23 \times 18 + 87)$ when divided by $5$?
