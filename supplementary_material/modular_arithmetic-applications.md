@@ -48,3 +48,11 @@ __Lemma.__ An integer $a$ is congruent modulo $3$ to the sum of its digits. In p
 Completely the same analysis applies to the remainders modulo $9$.
 
 __Lemma.__ An integer $a$ is congruent modulo $9$ to the sum of its digits. In particular, $a$ is divisible by $9$ iff the sum of its digits is divisible by $3$.
+
+## Remainders of Large Numbers
+__Problem.__ What is the remainder of the number $762341$ when divided by $3$?
+
+__Problem.__ What is the remainder of the number $12^{100}$ when divided by $11$?
+
+__Problem.__ What is the remainder of the number $4632^{10}$ when divided by $10$?
+
