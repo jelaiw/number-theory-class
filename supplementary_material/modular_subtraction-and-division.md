@@ -3,15 +3,15 @@ We have seen that any number is congruent to its remainder modulo $m$ and arithm
 
 Consider $m=7$ and consider addition operation $a + b \mod{7}$, where $a$ and $b$ are two remainders modulo $7$. We get the following table:
 
-![](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/x1x_Ck4HSESeI--EHXknxQ_c7659e6b978b4e5fb562ccd463ca12f1_Screen-Shot-2022-11-05-at-3.30.22-PM.png?expiry=1746662400000&hmac=hBl1zUk1D0D02Pc7rXwwe0TmfPtRjetuhIVcpDu3U0Y)
+![](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/x1x_Ck4HSESeI--EHXknxQ_c7659e6b978b4e5fb562ccd463ca12f1_Screen-Shot-2022-11-05-at-3.30.22-PM.png?expiry=174$6$2400000&hmac=hBl1zUk1D0D02Pc7rXwwe0TmfPtRjetuhIVcpDu3U0Y)
 
 Here, the entry on the intersection of a row $a$ and a column $b$ contains $a + b \mod{7}$. For example, the entry on the intersection of the row $a=3$ and the column corresponds to $b=5$ contains $1$, which is the remainder of $a + b = 8$ when divided by $7$:
 
-![](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/-hpcD-PxSOq87xxIkfeg-g_2170967c2c264025b87c6095edaccff1_Screen-Shot-2022-11-05-at-3.31.27-PM.png?expiry=1746662400000&hmac=bkKGnp54Zrkqvjuhr9zyYCBeKaVW5q4h2EjiNQFHZ2g)
+![](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/-hpcD-PxSOq87xxIkfeg-g_2170967c2c264025b87c6095edaccff1_Screen-Shot-2022-11-05-at-3.31.27-PM.png?expiry=174$6$2400000&hmac=bkKGnp54Zrkqvjuhr9zyYCBeKaVW5q4h2EjiNQFHZ2g)
 
 We can create a similar table for the multiplication:
 
-![](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/B0oPUjRXS7O0_39KOWRMzg_c67ddd0e3dc44080b9decfe6177ccff1_Screen-Shot-2022-11-05-at-3.32.02-PM.png?expiry=1746662400000&hmac=UtosIfJ_X7oKj3U0a9-uWrmcoYefc51eyU5A6UZfFPo)
+![](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/B0oPUjRXS7O0_39KOWRMzg_c67ddd0e3dc44080b9decfe6177ccff1_Screen-Shot-2022-11-05-at-3.32.02-PM.png?expiry=174$6$2400000&hmac=UtosIfJ_X7oKj3U0a9-uWrmcoYefc51eyU5A6UZfFPo)
 
 Here, the entry on the intersection of row $a$ and a column $b$ contains $a \times b \mod{7}$. For example, that the first row and the first column consist of zeros. This is not surprising, each entry there contains some number multiplied by $0$.
 
@@ -30,3 +30,25 @@ __Problem.__ Let $a$, $b$ and $m>1$ be integers. Is there $x$ such that $a + x \
 It turns out that the answer is positive even for an arbitrary $m$. To see this, consider $b-a$ as an integer and consider its remainder $x$ modulo $m$. We know that $a + (b - a) \equiv b \mod{m}$ and the congruence remains true even if we substitute $b-a$ by its remainder.
 
 The number $x$ in this problem plays a role of _modular subtraction_ $b-a$ in modular arithmetic. Thus, we have just checked that the subtraction is always possible in modular arithmetic.
+
+__Problem.__ Suppose we have a number $a$ not divisible by $7$ and a number $b$. Is there an integer $x$ such that $a \cdot x \equiv b \mod{7}$? 
+
+In this problem we can use the table for multiplication above. Again, $a$ corresponds to the row of the table (but since $a$ is not divisible by $7$, we consider only the rows starting from the second one), $x$ correspond to the column and $b$ corresponds to the entry on the intersection. From the table we can see that the answer to the question is positive again: each row starting from the second one contains all possible remainders.
+
+Here, $x$ plays the role of _modular division_ $b/a$: it is the number such that if we multiply it by $a$, we get $b$. We have just observed that division is always possible for $m = 7$ apart from an obvious case of division by $a \equiv 0 \mod{7}$. It might seem that we are now just one step away from answering our original question of establishing all arithmetic operations in modular arithmetic. But let us consider one more example. 
+
+__Problem.__ Suppose we have a number $a$ not divisible by $6$ and a number $b$. Is there an integer $x$ such that $a \cdot x \equiv b \mod{6}$? 
+
+To answer this question, we first need a table for multiplication modulo $m=6$. It is not hard to write one down:
+
+![](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/RPxMzBtkShKBc2mnGCBk8Q_b59ff203479c416791de48c70da716f1_Screen-Shot-2022-11-05-at-3.35.49-PM.png?expiry=1746748800000&hmac=Hq7tu3Z-r9pGRSSceNHGYNfIqIlkHC376d-dqh1_2VM)
+
+Now the situation changed: rows corresponding to $a=2$, $3$, and $4$ do not contain all possible remainders. For example, there is no $x$ such that $3x \equiv 1 \mod{6}$.
+
+Thus, it turns out that division modulo $6$ is not always possible. Now a lot of questions arise. Why is division modulo $7$ always possible, but it is not always possible modulo $6$? Is there a way when the division is possible and when it is not? We will figure this out soon!
+
+### Summary.
+- In this chapter, we started with simple notions, like divisibility and remainders, and from that we have developed the basics of modular arithmetic.
+- But we do not understand the things completely: we arrived into a problem with modular division.
+- The things turn out to be rather complicated. On the one hand, it is bad: it is nice when the computations and calculations are simple. On the other hand, this is good: complicated things are crucial for cryptography.
+    
