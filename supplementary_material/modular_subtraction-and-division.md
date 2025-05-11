@@ -3,15 +3,15 @@ We have seen that any number is congruent to its remainder modulo $m$ and arithm
 
 Consider $m=7$ and consider addition operation $a + b \mod{7}$, where $a$ and $b$ are two remainders modulo $7$. We get the following table:
 
-![](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/x1x_Ck4HSESeI--EHXknxQ_c7659e6b978b4e5fb562ccd463ca12f1_Screen-Shot-2022-11-05-at-3.30.22-PM.png?expiry=174$6$2400000&hmac=hBl1zUk1D0D02Pc7rXwwe0TmfPtRjetuhIVcpDu3U0Y)
+![](./fig-a_plus_b_mod7.png)
 
 Here, the entry on the intersection of a row $a$ and a column $b$ contains $a + b \mod{7}$. For example, the entry on the intersection of the row $a=3$ and the column corresponds to $b=5$ contains $1$, which is the remainder of $a + b = 8$ when divided by $7$:
 
-![](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/-hpcD-PxSOq87xxIkfeg-g_2170967c2c264025b87c6095edaccff1_Screen-Shot-2022-11-05-at-3.31.27-PM.png?expiry=174$6$2400000&hmac=bkKGnp54Zrkqvjuhr9zyYCBeKaVW5q4h2EjiNQFHZ2g)
+![](./fig-a_plus_b_mod7-2.png)
 
 We can create a similar table for the multiplication:
 
-![](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/B0oPUjRXS7O0_39KOWRMzg_c67ddd0e3dc44080b9decfe6177ccff1_Screen-Shot-2022-11-05-at-3.32.02-PM.png?expiry=174$6$2400000&hmac=UtosIfJ_X7oKj3U0a9-uWrmcoYefc51eyU5A6UZfFPo)
+![](./fig-a_mult_b_mod7.png)
 
 Here, the entry on the intersection of row $a$ and a column $b$ contains $a \times b \mod{7}$. For example, that the first row and the first column consist of zeros. This is not surprising, each entry there contains some number multiplied by $0$.
 
@@ -41,7 +41,7 @@ __Problem.__ Suppose we have a number $a$ not divisible by $6$ and a number $b$.
 
 To answer this question, we first need a table for multiplication modulo $m=6$. It is not hard to write one down:
 
-![](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/RPxMzBtkShKBc2mnGCBk8Q_b59ff203479c416791de48c70da716f1_Screen-Shot-2022-11-05-at-3.35.49-PM.png?expiry=1746748800000&hmac=Hq7tu3Z-r9pGRSSceNHGYNfIqIlkHC376d-dqh1_2VM)
+![](./fig-a_mult_b_mod6.png)
 
 Now the situation changed: rows corresponding to $a=2$, $3$, and $4$ do not contain all possible remainders. For example, there is no $x$ such that $3x \equiv 1 \mod{6}$.
 
