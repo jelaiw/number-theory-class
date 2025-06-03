@@ -35,3 +35,5 @@ Here, we use that the product does not change modulo $m$, when we replace the fa
 __Problem__. Prove that $2^{1001} + 3^{1001}$ is divisible by $5$.
 
 _Hint_: $3 \equiv -2\pmod{5}$
+
+__Problem__. Prove that $a^n - b^n$ is divisible by $a - b$ for integers $a > b$.
