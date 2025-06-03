@@ -31,3 +31,7 @@ $8^{100} = 8^2 \cdot 8^2 \cdot ... \cdot 8^2 \equiv 1 \cdot 1 \cdot ... \cdot 1 
 hence the answer is $1$. 
 
 Here, we use that the product does not change modulo $m$, when we replace the factors by equivalent (modulo $m$) ones. This (and the same property of sums) was discussed in the previous chapter. (When adding some multiple of $m$ to one of the summands or factors, we change the result by a multiple of $m$: indeed, $(u + km) + v = (u + v) + km$ and $(u + km)v = uv + kmv$.
+
+__Problem__. Prove that $2^{1001} + 3^{1001}$ is divisible by $5$.
+
+_Hint_: $3 \equiv -2\pmod{5}$
