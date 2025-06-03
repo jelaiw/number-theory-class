@@ -20,3 +20,14 @@ The right way to compute modular exponentiation in python is to use the built-in
 print(pow(314, 271, 123))
 print(pow(314159265358, 2718281828, 123456789))
 ```
+To get a hint, you may think about the following problem.
+
+__Problem__. Compute $8^{100}\mod{63}$
+
+Of course, starting with computing $8^{100}$ is a bad idea. Note that $8^2 \equiv 64 \equiv 1\pmod{63}$ and
+
+$8^{100} = 8^2 \cdot 8^2 \cdot ... \cdot 8^2 \equiv 1 \cdot 1 \cdot ... \cdot 1 \pmod{63}$,
+
+hence the answer is $1$. 
+
+Here, we use that the product does not change modulo $m$, when we replace the factors by equivalent (modulo $m$) ones. This (and the same property of sums) was discussed in the previous chapter. (When adding some multiple of $m$ to one of the summands or factors, we change the result by a multiple of $m$: indeed, $(u + km) + v = (u + v) + km$ and $(u + km)v = uv + kmv$.
