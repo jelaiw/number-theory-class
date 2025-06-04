@@ -43,3 +43,10 @@ _Hint_: $a \equiv b\pmod{d}$ for $d = a - b$.
 __Problem__. Find $2^{1025}\mod{17}$.
 
 __Solution__. Since $2^{1024} = 16^{256} \equiv (-1)^{256} \equiv 1 \pmod{17}$, the answer is $2$.
+
+__Stop and think!__ Now we can compute $a\mod{c}$, $a^2\mod{c}$, $a^3\mod{c}$, ... sequentially, multiplying each time by $a$ and keeping only the remainder modulo $c$. In this way we do not need to store large numbers (only numbers smaller than $c$). Does this approach work for our example $314159265358^{2718281828}\mod{123456789}$?
+
+The size of numbers is no more a problem, but we need to perform $2718281828$ multiplications --- too many. Can we do better? This is a _general question for computing powers_ (that makes sense not only for modular computations).
+
+__Problem__. 
+Let $x$ be some number. Can you compute $x^{64}$ in less than $63$ multiplications (that would be needed if we compute $x$,$x^2$,$x^3$, ... ,$x^{64}$ sequentially)?
