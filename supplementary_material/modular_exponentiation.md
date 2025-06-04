@@ -37,3 +37,9 @@ __Problem__. Prove that $2^{1001} + 3^{1001}$ is divisible by $5$.
 _Hint_: $3 \equiv -2\pmod{5}$
 
 __Problem__. Prove that $a^n - b^n$ is divisible by $a - b$ for integers $a > b$.
+
+_Hint_: $a \equiv b\pmod{d}$ for $d = a - b$.
+
+__Problem__. Find $2^{1025}\mod{17}$.
+
+__Solution__. Since $2^{1024} = 16^{256} \equiv (-1)^{256} \equiv 1 \pmod{17}$, the answer is $2$.
