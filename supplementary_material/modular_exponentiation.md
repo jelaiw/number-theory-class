@@ -58,3 +58,11 @@ $x^2 = x \cdot x$, $x^4 = x^2 \cdot x^2$, $x^8 = x^4 \cdot x^4$, $x^{16} = x^8 \
 In this way the exponents grow faster ($\times 2$ instead of $+1$ at every step), and we use only $6$ multiplications. 
 
 In general, to compute $x^n$ for $n = 2^k$ we need $k = log_2{n}$ multiplications.
+
+__Stop and think!__ Now we know how to compute $x^n$ fast if $n$ is a power of two. But what if not? How can we compute, say, $x^{65}$, or $x^{68}$, or $x^{77}$?
+
+For $x^{65}$ we may multiply $x^{64}$ by $x$. Since we have also computed previous powers of $2$, we may use that
+
+$x^{68} = x^{64} \cdot x^4$ and $x^{77} = x^{64} \cdot x^8 \cdot x^4 \cdot x$
+
+(note that $77 = 64 + 8 + 4 + 1$).
