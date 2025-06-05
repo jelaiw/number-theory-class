@@ -50,3 +50,11 @@ The size of numbers is no more a problem, but we need to perform $2718281828$ mu
 
 __Problem__. 
 Let $x$ be some number. Can you compute $x^{64}$ in less than $63$ multiplications (that would be needed if we compute $x$,$x^2$,$x^3$, ... ,$x^{64}$ sequentially)?
+
+For this problem the answer is especially easy to guess, since $64$ is a power of $2$ and repeated squaring helps:
+
+$x^2 = x \cdot x$, $x^4 = x^2 \cdot x^2$, $x^8 = x^4 \cdot x^4$, $x^{16} = x^8 \cdot x^8$, $x^{32} = x^{16} \cdot x^{16}$, $x^{64} = x^{32} \cdot x^{32}$
+
+In this way the exponents grow faster ($\times 2$ instead of $+1$ at every step), and we use only $6$ multiplications. 
+
+In general, to compute $x^n$ for $n = 2^k$ we need $k = log_2{n}$ multiplications.
