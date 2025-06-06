@@ -66,3 +66,25 @@ For $x^{65}$ we may multiply $x^{64}$ by $x$. Since we have also computed previo
 $x^{68} = x^{64} \cdot x^4$ and $x^{77} = x^{64} \cdot x^8 \cdot x^4 \cdot x$
 
 (note that $77 = 64 + 8 + 4 + 1$).
+
+Similar trick can be used in the general case, as the following problem shows:
+
+__Problem.__
+Prove that $x^n$ (for some $n > 1$) can be computed in at most $2log_2{n}$ multiplications.
+
+If $n$ is not a power of $2$, the value of $log_2{n}$ is not an integer, but we may take the closest integer below $log_2{n}$.
+
+__Solution.__
+Indeed, we can compute by squaring all the powers $x^2$, $x^4$, ... ,$x^{2^k}$ where the exponent does not exceed $n$. There are at most $log_2{n}$ of them (again we may round $log_2{n}$). Then we represent $n$ as sum of powers of $2$ (why is it possible? this is what the binary system is about) and get $x^n$ as the product of corresponding powers.
+
+For the practical viewpoint, it may make sense to implement essentially the same algorithm in the other direction, so to say: use formula
+
+$x^n = (x^2)^{n/2}$
+
+that reduces the exponent twice for even $n$ for the price of one multiplication ($x^2 = x \cdot x$), and use
+
+$x^n = x^{n-1} \cdot x$
+
+that uses one multiplication to reduce to the even case (if $n$ is odd, then $n-1$ is even). 
+
+In this case, we reduce the exponent to $1$ (or $0$, if we do not treat separately the case of $x^1$) in about $2log_2{n}$ steps (in two steps we reduce the exponent at least twice).
