@@ -1,5 +1,5 @@
 ## Modular Exponentiation
-Our next results (Fermat's little theorem and its generalization, Euler's totient theorem) deal with modular exponentiation, i.e., with expressions of type $a^b\mod{c}$ where $a$,$b$,$c$ are integers. But before stating and proving this result, let us discuss the purely algorithmic question: how to compute $a^b\mod{c}$ reasonably fast?
+Our next results (Fermat's little theorem and its generalization, Euler's totient theorem) deal with modular exponentiation, i.e., with expressions of type $a^b\mod{c}$ where $a$, $b$, $c$ are integers. But before stating and proving this result, let us discuss the purely algorithmic question: how to compute $a^b\mod{c}$ reasonably fast?
 
 __Stop and think!__ How would you compute $314^{271}\mod{123}$ and $314159265358^{2718281828}\mod{123456789}$?
 
@@ -49,7 +49,7 @@ __Stop and think!__ Now we can compute $a\mod{c}$, $a^2\mod{c}$, $a^3\mod{c}$, .
 The size of numbers is no more a problem, but we need to perform $2718281828$ multiplications --- too many. Can we do better? This is a _general question for computing powers_ (that makes sense not only for modular computations).
 
 __Problem__. 
-Let $x$ be some number. Can you compute $x^{64}$ in less than $63$ multiplications (that would be needed if we compute $x$,$x^2$,$x^3$, ... ,$x^{64}$ sequentially)?
+Let $x$ be some number. Can you compute $x^{64}$ in less than $63$ multiplications (that would be needed if we compute $x$, $x^2$, $x^3$, ... , $x^{64}$ sequentially)?
 
 For this problem the answer is especially easy to guess, since $64$ is a power of $2$ and repeated squaring helps:
 
