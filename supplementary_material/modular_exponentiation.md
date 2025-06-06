@@ -106,3 +106,16 @@ print(fast_modular_exponentiation(314159265358, 2718281828, 123456789))
 ```
 
 The program implementing this idea computes $314159265358^{2718281828}\mod{123456789}$ in a fraction of a second.
+
+__Problem.__
+Prove that the number of multiplications when computing $x^n$ (for $n \ge 1$) both in this program and in the method descibed above (using binary notation) is the same: 
+
+_(number of bits in n) + (number of ones in n) - 2_
+
+where counting the bits and ones in $n$ we use the binary representation of $n$.
+
+It turns out that this is not exactly the minimal number of multiplications needed to compute $x^n$. For example, for $x^{15}$ we get $6$ multiplications with both our approaches, while one can compute it in $5$ multiplications:
+
+$x^2 = x \cdot x; x^4 = x^2 \cdot x^2; x^5 = x^4 \cdot x; x^{10} = x^5 \cdot x^5; x^{15} = x^{10} \cdot x^5$.
+
+See [Wikipedia article about addition chains](https://en.wikipedia.org/wiki/Addition-chain_exponentiation) that minimize the number of multiplications.
