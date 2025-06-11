@@ -75,7 +75,7 @@ Prove that $x^n$ (for some $n > 1$) can be computed in at most $2log_2{n}$ multi
 If $n$ is not a power of $2$, the value of $log_2{n}$ is not an integer, but we may take the closest integer below $log_2{n}$.
 
 __Solution.__
-Indeed, we can compute by squaring all the powers $x^2$, $x^4$, ... ,$x^{2^k}$ where the exponent does not exceed $n$. There are at most $log_2{n}$ of them (again we may round $log_2{n}$). Then we represent $n$ as sum of powers of $2$ (why is it possible? this is what the binary system is about) and get $x^n$ as the product of corresponding powers.
+Indeed, we can compute by squaring all the powers $x^2$, $x^4$, ... , $x^{2^k}$ where the exponent does not exceed $n$. There are at most $log_2{n}$ of them (again we may round $log_2{n}$). Then we represent $n$ as sum of powers of $2$ (why is it possible? this is what the binary system is about) and get $x^n$ as the product of corresponding powers.
 
 For the practical viewpoint, it may make sense to implement essentially the same algorithm in the other direction, so to say: use formula
 
