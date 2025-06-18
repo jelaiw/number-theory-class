@@ -38,3 +38,5 @@ for i in range (2, 25):
         print(f' (hence, {i} is prime)', end='')
 
 ```
+
+The function `min_divisor(m)` is applied to an integer $m>1$ and returns the smallest divisor of $m$ (not counting $1$). It tests all $d \in \{2, ..., m\}$ (note that in python `range(a,b)` includes `a` but not `b`) until a divisor is found. It will return $m$ if there are no other divisors, i.e. if $m$ is prime. The last two lines of this function take advantage of the optimization mentioned above: if $d$ is too large (exceeding $\sqrt{m}$, which is true when $d * d > m$, then we know that $m$ is prime and return $m$ immediately.
