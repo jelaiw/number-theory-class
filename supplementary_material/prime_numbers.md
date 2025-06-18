@@ -40,3 +40,31 @@ for i in range (2, 25):
 ```
 
 The function `min_divisor(m)` is applied to an integer $m>1$ and returns the smallest divisor of $m$ (not counting $1$). It tests all $d \in \{2, ..., m\}$ (note that in python `range(a,b)` includes `a` but not `b`) until a divisor is found. It will return $m$ if there are no other divisors, i.e. if $m$ is prime. The last two lines of this function take advantage of the optimization mentioned above: if $d$ is too large (exceeding $\sqrt{m}$, which is true when $d * d > m$, then we know that $m$ is prime and return $m$ immediately.
+
+```pythong
+The minimal divisor of 2 is 2 (hence, 2 is prime)
+The minimal divisor of 3 is 3 (hence, 3 is prime)
+The minimal divisor of 4 is 2
+The minimal divisor of 5 is 5 (hence, 5 is prime)
+The minimal divisor of 6 is 2
+The minimal divisor of 7 is 7 (hence, 7 is prime)
+The minimal divisor of 8 is 2
+The minimal divisor of 9 is 3
+The minimal divisor of 10 is 2
+The minimal divisor of 11 is 11 (hence, 11 is prime)
+The minimal divisor of 12 is 2
+The minimal divisor of 13 is 13 (hence, 13 is prime)
+The minimal divisor of 14 is 2
+The minimal divisor of 15 is 3
+The minimal divisor of 16 is 2
+The minimal divisor of 17 is 17 (hence, 17 is prime)
+The minimal divisor of 18 is 2
+The minimal divisor of 19 is 19 (hence, 19 is prime)
+The minimal divisor of 20 is 2
+The minimal divisor of 21 is 3
+The minimal divisor of 22 is 2
+The minimal divisor of 23 is 23 (hence, 23 is prime)
+The minimal divisor of 24 is 2
+```
+
+In the output you may easily recognize prime numbers (rows with two identical numbers).
