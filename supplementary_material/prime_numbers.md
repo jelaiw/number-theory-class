@@ -12,3 +12,9 @@ __Stop and think!__ Is $1$ a prime number?
 It is tempting to guess that $1$ is prime since it cannot be expressed as the product of smaller positive integers (there are no smaller positive integers to pick from!). Still, our definition explicitly requires $p > 1$ for a prime, so $1$ is not considered a prime number (nor is it considered composite). But this is just a decision that most mathematicians agree with, not a theorem. 
 
 See, for example, this [long stackexchange discussion](https://math.stackexchange.com/questions/120/why-is-1-not-a-prime-number).
+
+__Problem.__ Show that a composite number $m$ has a divisor $d$ such that $1 < d \le \sqrt{m}$.
+
+__Solution.__ For a decomposition $m = uv$, we know that both divisors are greater than $1$ (if $u$ or $v$ were equal to $1$, the other would have to be equal to $m$, but both are smaller). Now, suppose both $u$ and $v$ did exceed $\sqrt{m}$: then their product would exceed $\sqrt{m} \cdot \sqrt{m} = m$.
+
+Thus, at least one must be less than or equal to $\sqrt{m}$, satisfying the existence of $d$ as described.
