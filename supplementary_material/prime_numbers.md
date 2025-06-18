@@ -18,3 +18,23 @@ __Problem.__ Show that a composite number $m$ has a divisor $d$ such that $1 < d
 __Solution.__ For a decomposition $m = uv$, we know that both divisors are greater than $1$ (if $u$ or $v$ were equal to $1$, the other would have to be equal to $m$, but both are smaller). Now, suppose both $u$ and $v$ did exceed $\sqrt{m}$: then their product would exceed $\sqrt{m} \cdot \sqrt{m} = m$.
 
 Thus, at least one must be less than or equal to $\sqrt{m}$, satisfying the existence of $d$ as described.
+
+This problems shows that it is not necessary to check every possible number between $1$ and $m$ in search of a divisor if we want to check whether $m$ is prime. It is enough to check the numbers that do not exceed $\sqrt{m}$: if there are no divisors among them, then $m$ must be prime.
+
+```python
+# Finds the smallest divisor>1 of the given integer m>1
+def min_divisor(m):
+    for d in range(2, m + 1):
+        if m % d == 0:
+            return d
+        # optimization:
+        if d * d > m:
+            return m
+      
+for i in range (2, 25):
+    divisor = min_divisor(i)
+    print(f'\nThe smallest divisor of {i} is {divisor}', end='')
+    if divisor == i:
+        print(f' (hence, {i} is prime)', end='')
+
+```
