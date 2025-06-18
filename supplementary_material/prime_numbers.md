@@ -41,7 +41,7 @@ for i in range (2, 25):
 
 The function `min_divisor(m)` is applied to an integer $m>1$ and returns the smallest divisor of $m$ (not counting $1$). It tests all $d \in \{2, ..., m\}$ (note that in python `range(a,b)` includes `a` but not `b`) until a divisor is found. It will return $m$ if there are no other divisors, i.e. if $m$ is prime. The last two lines of this function take advantage of the optimization mentioned above: if $d$ is too large (exceeding $\sqrt{m}$, which is true when $d * d > m$, then we know that $m$ is prime and return $m$ immediately.
 
-```pythong
+```python
 The minimal divisor of 2 is 2 (hence, 2 is prime)
 The minimal divisor of 3 is 3 (hence, 3 is prime)
 The minimal divisor of 4 is 2
@@ -100,4 +100,11 @@ def primes_list(n):
 
 print('The first ten primes:')
 print(primes_list(10))
+```
+
+We store in `lst` the list of all the primes smaller than `boundary`; initially `boundary` is $2$ and `lst` is empty. Then, while `lst` is not yet long enough, we increase `boundary` by $1$ after updating the list (appending the old value of `boundary` if it was prime).
+
+```sh
+The first ten primes:
+[2, 3, 5, 7, 11, 13, 17, 19, 23, 29]
 ```
