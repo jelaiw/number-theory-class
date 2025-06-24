@@ -44,3 +44,11 @@ def factoring(m):
 for i in (7, 60, 1001, 2 ** 32 + 1, 2 ** 64 + 1):
     print(f'Factoring of {i}: {factoring(i)}')
 ```
+
+```sh
+Factoring of 7: [7]
+Factoring of 60: [5, 3, 2, 2]
+Factoring of 1001: [13, 11, 7]
+Factoring of 4294967297: [6700417, 641]
+Factoring of 18446744073709551617: [67280421310721, 274177]
+```
