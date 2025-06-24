@@ -60,3 +60,9 @@ The algorithm finds the smallest divisor $d$ and then decomposes $m$ into $d \cd
 __Stop and think!__ Why is it OK to do this?
 
 In other words, why may we assume that the smallest divisor $d$ is a prime? The answer is in the word "smallest": if $d$ were not prime, then its divisors would be smaller divisors of $m$. (Recall that a divisor of a divisor is a divisor: $u \mid d$ and $d \mid m$ implies $u \mid m$, as we have seen.)
+
+__Problem.__
+Note that in our examples the factors go in the non-increasing order in the decomposition provided by our algorithm. Will it be always the case?
+
+__Solution.__
+In fact it will, and it is easy to see why, also using inductive (recursive) argument. In our algorithm, $d$ is the _smallest_ divisor of $m$, so all divisors of $m/d$ (being also divisors of $m$) are at least $d$. So appending $d$ to the ordered list for $m/d$ (induction assumption), we do not destroy the ordering.
