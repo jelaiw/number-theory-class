@@ -15,3 +15,32 @@ __Stop and think!__ Do you see how to prove the theorem?
 Let us look at this statement from the algorithmic point of view: given some $m>1$, how can we find a prime decomposition (existence of which we want to prove)?
 
 If $m$ is prime, we already know that this decomposition consists of $m$ only. What if $m$ is composite (not prime)? By definition then, $m=uv$ for some $u$, $v$ where $1 < u,v < m$. How can we then find the decomposition of $m$?  It is easy: just combine the decompositions of $u$ and $v$, forming a long product from the two shorter ones. Both $u$ and $v$ are smaller that $m$, so we may assume (by induction in our proof, or a recursive call in our algorithm) that for $u$ and $v$ the decompositions exist and can be found.
+
+```python
+# Finds the minimal divisor>1 of the given integer m>1
+def min_divisor(m):
+    for d in range(2, m + 1):
+        if m % d == 0:
+            return d
+        # optimization:
+        if d * d > m:
+            return m
+
+
+def is_prime(m):
+    return m == min_divisor(m)
+
+
+def factoring(m):
+    if is_prime(m):
+        return [m]
+    else:
+        divisor = min_divisor(m)
+        factors = factoring(m // divisor)
+        factors.append(divisor)
+        return factors
+
+
+for i in (7, 60, 1001, 2 ** 32 + 1, 2 ** 64 + 1):
+    print(f'Factoring of {i}: {factoring(i)}')
+```
