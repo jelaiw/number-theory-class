@@ -52,3 +52,8 @@ Factoring of 1001: [13, 11, 7]
 Factoring of 4294967297: [6700417, 641]
 Factoring of 18446744073709551617: [67280421310721, 274177]
 ```
+
+__Stop and think!__ Examine the algorithm and compare it with the description above. What is the discrepancy and why is the algorithm correct?
+
+The algorithm finds the smallest divisor $d$ and then decomposes $m$ into $d \cdot (m / d)$. If we followed our description literally, we should be applying the algorithm recursively to both $d$ and $m / d$ and concatenate the resulting lists. Instead, we just append $d$ to the decomposition of $m / d$.
+
