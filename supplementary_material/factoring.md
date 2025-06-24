@@ -57,3 +57,6 @@ __Stop and think!__ Examine the algorithm and compare it with the description ab
 
 The algorithm finds the smallest divisor $d$ and then decomposes $m$ into $d \cdot (m / d)$. If we followed our description literally, we should be applying the algorithm recursively to both $d$ and $m / d$ and concatenate the resulting lists. Instead, we just append $d$ to the decomposition of $m / d$.
 
+__Stop and think!__ Why is it OK to do this?
+
+In other words, why may we assume that the smallest divisor $d$ is a prime? The answer is in the word "smallest": if $d$ were not prime, then its divisors would be smaller divisors of $m$. (Recall that a divisor of a divisor is a divisor: $u \mid d$ and $d \mid m$ implies $u \mid m$, as we have seen.)
