@@ -75,3 +75,10 @@ __Hint__: look at the second line in our factorization examples.
 The numbers of the form $2^{2^n} + 1$ were considered long ago by Pierre Fermat (1607--1665, [Wikipedia](https://en.wikipedia.org/wiki/Pierre_de_Fermat)), famous for the Last Fermat theorem; we will see the other result of him later in this chapter. He noticed that $2^0 + 1$, $2^1 + 1$, $2^2 + 1$, $2^4 + 1$, $2^8 + 1$, $2^{16} + 1$ are all primes and conjectured that all subsequent numbers are also prime. Only later Leonhard Euler (1707--1783, [Wikipedia](https://en.wikipedia.org/wiki/Leonhard_Euler)) discovered the factorization of $2^{32} + 1$ in 1732, and more than a century after that was needed to find the factorization of $2^{64} + 1$. Now our simple program gives these factorization in seconds. (But do not forget two optimization lines, otherwise it would take much longer.)
 
 For the next Fermat numbers one should use more advanced factorization algorithms. There is a module `sympy` in python that provides function `factorint` that factors $2^{128} + 1$ and $2^{256} + 1$ in minutes, but Fermat numbers grow really fast (and only few more factorizations are known, even if we use the most advanced factorization tools).
+
+## Uniqueness
+Decomposition of an integer $m>1$ into a product of prime factors is essentially unique. The word "essentially" here means that we ignore the ordering of the factors: they can be permuted in any way and we still get the same decomposition. For example, 
+
+$12 = 2 \cdot 2 \cdot 3 = 2 \cdot 3 \cdot 2 = 3 \cdot 2 \cdot 2$
+
+are all the same decompositions.
