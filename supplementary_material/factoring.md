@@ -66,3 +66,8 @@ Note that in our examples the factors go in the non-increasing order in the deco
 
 __Solution.__
 In fact it will, and it is easy to see why, also using inductive (recursive) argument. In our algorithm, $d$ is the _smallest_ divisor of $m$, so all divisors of $m/d$ (being also divisors of $m$) are at least $d$. So appending $d$ to the ordered list for $m/d$ (induction assumption), we do not destroy the ordering.
+
+__Problem.__
+There is a funny trick for children that learn division. Take any three digit number, say $358$. Write it twice: $358358$. Then divide the resulting number by $74, then by $11$ and then by $13$. Miraculously all divisions do not give a remainder and the result is the original number $358$ (indeed, $358358/7=51194$, $51194/11=4654$ and $4654/13=358$). Can you explain why this trick always works?
+
+__Hint__: look at the second line in our factorization examples.
