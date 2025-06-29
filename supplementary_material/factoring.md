@@ -82,3 +82,8 @@ Decomposition of an integer $m>1$ into a product of prime factors is essentially
 $12 = 2 \cdot 2 \cdot 3 = 2 \cdot 3 \cdot 2 = 3 \cdot 2 \cdot 2$
 
 are all the same decompositions.
+
+Here is a more formal statement:
+
+__Theorem.__
+Let $m = p_1 \cdot ... \cdot p_k = q_1 \cdot ... \cdot q_l$ be two decompositions of an integer $m>1$ into products of primes. Then $k=l$ and the lists $[p_1, ..., p_k]$ and $[q_1, ..., q_l]$ contain the same numbers (can be obtained from each other by a permutation of elements).
