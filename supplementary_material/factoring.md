@@ -87,3 +87,25 @@ Here is a more formal statement:
 
 __Theorem.__
 Let $m = p_1 \cdot ... \cdot p_k = q_1 \cdot ... \cdot q_l$ be two decompositions of an integer $m>1$ into products of primes. Then $k=l$ and the lists $[p_1, ..., p_k]$ and $[q_1, ..., q_l]$ contain the same numbers (can be obtained from each other by a permutation of elements).
+
+__Stop and think!__ Look at the following two factorizations of the same number:
+
+$78227 \cdot 244999=19165536773=99599 \cdot 192427$
+
+Isn't it a counterexample to the unique factoring theorem?
+
+Indeed, we have two essentially different decompositions. But nobody said that the factors are prime. Indeed, we may factor them (e.g., using the programs shown above) and find that 
+
+$78227=137 \cdot 571$,
+
+$244999=337 \cdot 727$,
+
+$99599=137 \cdot 727$,
+
+$192427=337 \cdot 571$.
+
+So both decompositions are obtained from
+
+$19165536773=137 \cdot 337 \cdot 571 \cdot 727$
+
+by different ways of grouping the factors.
